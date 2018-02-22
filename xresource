@@ -1,0 +1,131 @@
+
+
+! URXVT GENERAL CONFIG
+!------------------------------------------------
+URxvt*iconFile: /usr/share/icons/Faenza/apps/32/utilities-terminal.png
+IRC*iconFile: /usr/share/icons/Faenza/apps/32/xchat.png
+URxvt.geometry: 80x22
+! URXVT FONTS
+!------------------------------------------------
+URxvt.font:xft:Hack:size=12
+URxvt.boldFont:xft:Hack:bold:size=12
+URxvt.italicfont:xft:Hack:italic:size=12
+URxvt.bolditalicFont:xft:Hack:bold:italic:size=12
+URxvt*letterSpace: 1
+URxvt*allow_bold: true
+! URXVT FONT SETTINGS
+!------------------------------------------------
+Xft.autohint: true
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+! URXVT ENABLE LINK SUPPORT
+!------------------------------------------------
+URxvt.perl-lib: /home/luca/Documenti/perl/
+URxvt.perl-ext-common: default,matcher,clipboard
+!tabbed
+URxvt.matcher.button: 1
+URxvt.perl-ext: default
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/firefox
+URxvt.url-select.underline: true
+!disable the fucking bell
+URxvt.insecure: false
+! URXVT COPY PASTE SHORTCUTS
+!------------------------------------------------
+URxvt.iso14755: False
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+! URXVT SCROLLBAR AND CURSOR STYLE
+!------------------------------------------------
+URxvt*saveLines: 300000
+URxvt.scrollBar: false
+!URxvt*scrollstyle: plain
+URxvt*cursorBlink: true
+URxvt*cursorUnderline: true
+
+! URXVT TABS
+!------------------------------------------------
+URxvt.tabbedex.autohide: yes
+URxvt.tabbedex.tabbar-fg: 2
+URxvt.tabbedex.tabbar-bg: 0
+URxvt.tabbedex.tab-fg: 10
+URxvt.tabbedex.tab-bg: 0
+URxvt.tabbedex.title: yes
+URxvt.tabbedex.new-button: no
+URxvt.background:#232323
+! URXVT FULLSCREEN TOGGLE
+!------------------------------------------------
+URxvt.keysym.F11: perl:fullscreen:switch
+! URXVT COLORS
+!------------------------------------------------
+! vim: set filetype=xdefaults :
+
+! special
+!*.foreground:#93a1a1
+!*.background:#3c3b37
+!*.cursorColor: #93a1a1
+
+! special
+! vim: set filetype=xdefaults :
+*foreground: #D7D0C7
+*background: #151515
+
+!black
+! *color0:     #AF875F
+! *color8:     #AF875F
+*color0:     #101010
+*color8:     #404040
+!red
+*color1:     #E84F4F
+*color9:     #D23D3D
+!green
+*color2:     #B8D68C
+*color10:    #A0CF5D
+!yellow
+*color3:     #E1AA5D
+*color11:    #F39D21
+!blue
+*color4:     #7DC1CF
+*color12:    #4E9FB1
+!magenta
+*color5:     #9B64FB
+*color13:    #8542FF
+!cyan
+*color6:     #6D878D
+*color14:    #42717B
+!white
+*color7:     #dddddd
+*color15:    #dddddd
+
+
+! ------------------------------------------------------------------------------
+!                      ROFI Settings
+! ------------------------------------------------------------------------------
+
+! General
+rofi.font:                Iosevka Slab 12
+rofi.fake-transparency:   true
+rofi.hide-scrollbar:      true
+
+
+! Layout
+rofi.width:              30
+rofi.column:             4
+rofi.location:           0
+rofi.lines:              8
+rofi.padding:            20
+rofi.sidebar-mode:       false
+rofi.fullscreen:         false
+
+! ------------------------------------------------------------------------------
+!                      ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-window: #1d2120, #1d2120, #458588
+rofi.color-normal: #1d2120, #ebdbb2, #1d2120, #458588, #1d2120
+rofi.color-active: #1d2120, #ebdbb2, #1d2120, #458588, #1d2120
+rofi.color-urgent: #1d2120, #69584E, #1d2120, #69584E, #ebdbb2

@@ -1,0 +1,33 @@
+# This is a comment
+  [global_config]
+  focus = system
+  suppress_multiple_term_dialog = True
+  borderless=true
+  scroll_tabbar=False
+  [keybindings]
+    full_screen = <Ctrl><Shift>F11
+
+  [profiles]
+  [[default]]
+   scrollbar_position = hidden
+   tab_position=hidden
+   show_titlebar=false
+   palette = "#000000:#f92672:#6cc72c:#fe9720:#5f91ef:#9358fe:#36af90:#8c8c8c:#4c4c4c:#ff80f4:#a7e22e:#ffee99:#5fd9ef:#ae82fe:#66efd5:#c7cece"
+    use_system_font = False
+    foreground_color = "#ffffff"
+    font = WenQuanYi Micro Hei Mono 11
+    background_color = "#0d0d0d"
+    background_darkness = 0.85
+    background_image = None
+    background_type = transparent
+    allow_bold = False
+[layouts]
+ [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window 
+[plugins]
